@@ -17,5 +17,9 @@ export class SidebarComponent {
     return this.gifsService.tagsHistory;
   }
 
+  public handleClick(tag: string) {
+    this.gifsService.searchTag(tag)
+  }
+
 
  }

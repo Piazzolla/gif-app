@@ -4,7 +4,9 @@
 
 <div class="list-group list-reset">
       <!-- @for (tag of this.tags; track $index) { -->
-      <button *ngFor="let tag of tags" class="list-group-item list-grop-item-action">
+      <button *ngFor="let tag of tags" class="list-group-item list-grop-item-action"
+      (click)="handleClick(tag)"
+      >
         {{ tag | titlecase}}
       </button>
     <!-- } -->
