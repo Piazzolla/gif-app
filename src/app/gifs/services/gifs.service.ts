@@ -1,7 +1,7 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Gif, SearchResponse } from '../interfaces/gifs.interfaces';
-import { environment } from '../../../../environment/environmment';
+import { environment } from '../../../../environment/environment';
 
 @Injectable({
   providedIn: 'root'
