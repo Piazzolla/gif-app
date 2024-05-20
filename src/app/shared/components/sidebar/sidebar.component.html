@@ -1,14 +1,16 @@
-<div class="bg-dark border-right p-3" id="sidebar">
-  <h3 class="text-light">GifsApp</h3>
-  <hr class="text-white">
+<div class="bg-dark border-right p-3 container-fluid sticky-top" id="sidebar">
 
-<div class="list-group list-reset">
-      <!-- @for (tag of this.tags; track $index) { -->
-      <button *ngFor="let tag of tags" class="list-group-item list-grop-item-action"
-      (click)="handleClick(tag)"
-      >
-        {{ tag | titlecase}}
-      </button>
-    <!-- } -->
-    </div>
+    <h3 class="text-light">GifsApp</h3>
+    <hr class="text-white">
+
+  <div class="list-group list-reset">
+        @for (tag of this.tags; track $index) {
+        <button class="list-group-item list-grop-item-action"
+        (click)="handleClick(tag)"
+        >
+          {{ tag | titlecase}}
+        </button>
+      }
+  </div>
+
 </div>
