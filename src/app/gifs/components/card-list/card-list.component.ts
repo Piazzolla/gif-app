@@ -1,5 +1,4 @@
-import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { Gif } from '../../interfaces/gifs.interfaces';
 
 @Component({
@@ -10,6 +9,7 @@ import { Gif } from '../../interfaces/gifs.interfaces';
       display: block;
     }
   `,
+  changeDetection: ChangeDetectionStrategy.Default,
 })
 export class CardListComponent {
   @Input()
